@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food and Nutrition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+    <h1>Food and Nutrition Data</h1>
+    <div id="add-food-form">
+        <h2>Add Food Item</h2>
+        <form id="foodForm">
+            <label for="foodName">Food Name:</label>
+            <input type="text" id="foodName" required>
+
+            <label for="foodGroup">Food Group:</label>
+            <input type="text" id="foodGroup" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" required></textarea>
+
+            <label for="calories">Calories:</label>
+            <input type="number" id="calories" >
+
+            <label for="proteins">Proteins (g):</label>
+            <input type="number" id="proteins" >
+
+            <label for="fats">Fats (g):</label>
+            <input type="number" id="fats" required>
+
+            <label for="carbohydrates">Carbohydrates (g):</label>
+            <input type="number" id="carbohydrates">
+
+            <label for="sodium">Sodium (mg):</label>
+            <input type="number" id="sodium">
+
+            <label for="cholesterol">Cholesterol (mg):</label>
+            <input type="number" id="cholesterol">
+
+            <label for="servingSize">Serving Size (g):</label>
+            <input type="number" id="servingSize">
+
+            <label for="allergens">Allergens (comma-separated):</label>
+            <input type="text" id="allergens">
+
+            <label for="ingredients">Ingredients (comma-separated):</label>
+            <input type="text" id="ingredients">
+
+            <label for="preparationMethods">Preparation Methods (comma-separated):</label>
+            <input type="text" id="preparationMethods">
+
+            <label for="certifications">Certifications:</label>
+            <input type="text" id="certifications">
+
+            <label for="countryOrigin">Country of Origin:</label>
+            <input type="text" id="countryOrigin">
+
+            <label for="brand">Brand:</label>
+            <input type="text" id="brand">
+
+            <label for="dietaryRestrictions">Dietary Restrictions (comma-separated):</label>
+            <input type="text" id="dietaryRestrictions">
+
+            <button type="submit">Add Food Item</button>
+        </form>
+        <div id="error-message"></div>
+    </div>
+    <button id="display" type="button">Display Data</button>
+    <div id="food-data" class="hide"></div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
